@@ -26,15 +26,91 @@
     type="text/css"
   />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- button & font color-customization -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            "icon-primary": "#ABEF5F",
+            "color-1c": "#1C1C1C",
+            "color-21": "#212121",
+            "color-49": "#494949",
+            "color-73": "#737373",
+            "color-e9": "#e9e9e9",
+            "button-primary": "#ABEF5F",
+            "button-secondary": "rgba(171, 239, 95, 0.5)",
+            "button-tertiary": "rgba(171, 239, 95, 0.2)",
+          },
+        },
+      },
+    };
+  </script>
+
   <style>
     .font-manrope {
       font-family: "Manrope", sans-serif;
     }
   </style>
 
-  <body class="font-manrope">
+  <body class="font-manrope m-0 p-0">
     <!-- header section starts -->
-    <header></header>
+    <header>
+      <!-- navbar -->
+      <nav class="container mx-auto mt-8 mb-10 lg:mt-14 lg:mb-14">
+        <div class="navbar">
+          <div class="navbar-start flex gap-2">
+            <i
+              class="fa-solid fa-arrow-right text-color-1c bg-icon-primary p-[10px] -rotate-45 rounded-full"
+            ></i>
+            <a class="text-[28px] md:text-[32px] text-color-21 font-extrabold"
+              >Rinterio</a
+            >
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-color-49 font-extrabold text-[16px]">
+                <a>Home</a>
+              </li>
+              <li class="text-color-73 font-normal text-[16px]">
+                <a>Services</a>
+              </li>
+              <li class="text-color-73 font-normal text-[16px]">
+                <a>Portfolio</a>
+              </li>
+              <li class="text-color-73 font-normal text-[16px]">
+                <a>Blogs</a>
+              </li>
+              <li class="text-color-73 font-normal text-[16px]">
+                <a>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar-end">
+            <div class="hidden md:block">
+              <a class="btn bg-button-primary rounded-[32px]"
+                ><span class="font-extrabold text-xl text-color-1c"
+                  >Book Consult</span
+                >
+                <i
+                  class="fa-solid fa-arrow-right text-white bg-color-1c p-[10px] -rotate-45 rounded-full"
+                ></i
+              ></a>
+            </div>
+
+            <div class="md:hidden">
+              <i
+                class="fa-solid fa-bars p-3 rounded-full border-solid border-color-e9 border-[1px]"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- header section ends -->
 
     <!-- main section starts -->
