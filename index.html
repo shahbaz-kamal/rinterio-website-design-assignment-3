@@ -26,6 +26,7 @@
     type="text/css"
   />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/style.css" />
 
   <!-- button & font color-customization -->
   <script>
@@ -43,6 +44,7 @@
             "button-primary": "#ABEF5F",
             "button-secondary": "rgba(171, 239, 95, 0.5)",
             "button-tertiary": "rgba(171, 239, 95, 0.2)",
+            "button-connect": "rgba(171, 239, 95, 0.4)",
           },
         },
       },
@@ -513,6 +515,94 @@
         </div>
       </section>
       <!-- latest portfolio section ends -->
+
+      <!-- Next Project section starts  -->
+      <section class="form-bg py-8 lg:py-16">
+        <div class="max-w-[970px] mx-auto px-[10px] lg:px-0 z-10">
+          <!-- text content -->
+
+          <div class="flex flex-col items-center justify-center mb-8">
+            <button
+              class="bg-button-secondary rounded-3xl font-bold text-base py-2 px-4 text-color-49 mb-4 z-10"
+            >
+              <i class="fa-solid fa-arrow-right text-color-1c rounded-full"></i>
+              Let’s Connect
+            </button>
+
+            <h2 class="font-bold text-2xl lg:text-[40px] text-color-21 z-10">
+              Let’s Discuss Next Project
+            </h2>
+            <p
+              class="mt-4 lg:mt-6 lg:max-w-[678px] text-center font-medium text-sm lg:text-base text-color-49"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          <!-- Input forms -->
+          <div class="grid lg:grid-cols-2 gap-5 px-[10px] lg:px-0 mb-5 z-10">
+            <label
+              class="input input-bordered flex items-center gap-2 rounded-[64px]"
+            >
+              <input
+                type="text"
+                class="grow placeholder-[#A0A0A0] placeholder:text-base placeholder:font-medium"
+                placeholder="First Name*"
+              />
+            </label>
+
+            <label
+              class="input input-bordered flex items-center gap-2 rounded-[64px]"
+            >
+              <input
+                type="text"
+                class="grow placeholder-[#A0A0A0] placeholder:text-base placeholder:font-medium"
+                placeholder="Last Name*"
+              />
+            </label>
+
+            <label
+              class="input input-bordered flex items-center gap-2 rounded-[64px]"
+            >
+              <input
+                type="number"
+                class="grow placeholder-[#A0A0A0] placeholder:text-base placeholder:font-medium"
+                placeholder="Phone Number*"
+              />
+            </label>
+            <label
+              class="input input-bordered flex items-center gap-2 rounded-[64px]"
+            >
+              <input
+                type="text"
+                class="grow placeholder-[#A0A0A0] placeholder:text-base placeholder:font-medium"
+                placeholder="Email Number*"
+              />
+            </label>
+          </div>
+          <!-- text area  -->
+          <div class="px-[10px] lg:px-0 mb-5 z-10">
+            <textarea
+              class="textarea textarea-bordered w-full h-[240px] rounded-[32px] placeholder-[#A0A0A0] placeholder:text-base placeholder:font-medium"
+              placeholder="Write your message here"
+            ></textarea>
+          </div>
+          <!-- mail button -->
+          <div class="w-full px-[10px] lg:px-0 z-10">
+            <a
+              class="btn bg-button-primary rounded-[32px] border-[1px] border-icon-primary w-full"
+              ><span class="font-extrabold text-xl text-color-1c"
+                >Send Mail</span
+              >
+              <i
+                class="fa-solid fa-arrow-right text-white bg-color-1c p-[10px] -rotate-45 rounded-full"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- Next Project section ends  -->
     </main>
 
     <!-- main section ends -->
