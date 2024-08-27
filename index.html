@@ -43,6 +43,7 @@
             "color-e9": "#e9e9e9",
             "button-primary": "#ABEF5F",
             "button-secondary": "rgba(171, 239, 95, 0.5)",
+            "slider-primary": "rgba(171, 239, 95, 0.8)",
             "button-tertiary": "rgba(171, 239, 95, 0.2)",
             "button-connect": "rgba(171, 239, 95, 0.4)",
           },
@@ -60,10 +61,11 @@
   <body class="font-manrope m-0 p-0">
     <!-- header section starts -->
     <header
-      class="bg-gradient-to-b from-[rgba(255, 255, 255, 1)] to-[rgba(255, 255, 255, 0)] pt-4 pb-10 lg:pb-16 px-[10px]"
+      class="bg-gradient-to-b from-[#e5e4e2] to-[rgba(229, 228, 226, 0)] pt-4 pb-10 lg:pb-16 px-[10px]"
     >
       <!-- bg-gradient-to-b from-[#e5e4e2] to-[rgba(229, 228, 226, 0)] -->
       <!-- bg-gradient-to-b from-[#e5e4e2] to-[rgba(229, 228, 226, 0)] -->
+      <!-- bg-gradient-to-b from-[rgba(255, 255, 255, 1)] to-[rgba(255, 255, 255, 0)] -->
       <!-- navbar -->
       <nav class="container mx-auto mb-8 lg:mb-10">
         <div class="navbar">
@@ -515,6 +517,153 @@
         </div>
       </section>
       <!-- latest portfolio section ends -->
+
+      <!-- challenge section starts -->
+      <section
+        class="container mx-auto py-8 lg:py-16 px-[15px] lg:px-0 relative"
+      >
+        <!-- section title -->
+        <div class="flex flex-col items-center justify-center mb-6 lg:mb-8">
+          <button
+            class="bg-white rounded-3xl font-bold text-base py-2 px-4 text-color-49 mb-4"
+          >
+            <i class="fa-solid fa-arrow-right text-color-1c rounded-full"></i>
+            Catalogs
+          </button>
+
+          <h2
+            class="font-bold text-2xl lg:text-[40px] text-color-21 mx-auto text-center"
+          >
+            Designs you can use in your home
+          </h2>
+          <p
+            class="mt-4 lg:mt-6 lg:max-w-[678px] text-center font-medium text-sm lg:text-base text-color-49"
+          >
+            Explore our collection of ready-made catalogs, where you can select
+            your favorite designs, and we'll bring them to life in your home.
+            <br /><span class="font-semibold">
+              (Simply click the button at the bottom of the image to get
+              started.)</span
+            >
+          </p>
+        </div>
+
+        <!-- slider starts -->
+        <div class="carousel w-full">
+          <!-- slide 1 -->
+          <div
+            id="slide1"
+            class="carousel-item relative w-full h-[80vh] rounded-3xl shadow-sm border-0"
+          >
+            <img
+              src="./assets/slider_1.jpg"
+              class="w-full h-full object-cover rounded-3xl border-0"
+            />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-slider-primary border border-slider-primary shadow-sm font-extrabold"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle btn btn-circle bg-slider-primary border border-slider-primary shadow-sm font-extrabold"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div
+            id="slide2"
+            class="carousel-item relative w-full h-[80vh] rounded-3xl shadow-sm border-0"
+          >
+            <img
+              src="./assets/slider_2.jpg"
+              class="w-full h-full object-cover rounded-3xl border-0"
+            />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-slider-primary border border-slider-primary shadow-sm font-extrabold"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle btn btn-circle bg-slider-primary border border-slider-primary shadow-sm font-extrabold"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div
+            id="slide3"
+            class="carousel-item relative w-full h-[80vh] rounded-3xl shadow-sm border-0"
+          >
+            <img
+              src="./assets/slider_3.jpg"
+              class="w-full h-full object-cover rounded-3xl border-0"
+            />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-slider-primary border border-slider-primary shadow-sm font-extrabold"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle btn btn-circle bg-slider-primary border border-slider-primary shadow-sm font-extrabold"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide 4 -->
+          <div
+            id="slide4"
+            class="carousel-item relative w-full h-[80vh] rounded-3xl shadow-sm border-0"
+          >
+            <img
+              src="./assets/slider_4.jpg"
+              class="w-full h-full object-cover rounded-3xl border-0"
+            />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-slider-primary border border-slider-primary shadow-sm font-extrabold"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle btn btn-circle bg-slider-primary border border-slider-primary shadow-sm font-extrabold"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            class="px-[20px] lg:px-0 flex justify-center items-center w-full lg:w-auto lg:mx-auto absolute bottom-[50px] left-1/2 transform -translate-x-1/2 mb-6 lg:mb-8"
+          >
+            <a
+              class="btn bg-button-primary rounded-[32px] border-[1px] border-button-primary w-full"
+              ><span class="font-extrabold text-xl text-color-1c"
+                >I want this for my home</span
+              >
+              <i
+                class="fa-solid fa-arrow-right text-white bg-color-1c p-[10px] -rotate-45 rounded-full"
+              ></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- slider ends -->
+      </section>
+      <!-- challenge section ends -->
 
       <!-- Next Project section starts  -->
       <section class="form-bg py-8 lg:py-16">
